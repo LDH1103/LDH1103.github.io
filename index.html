@@ -193,6 +193,7 @@
                                 3차 담당 : 결제, 가입시 메일인증, 아이디, 비밀번호 찾기, 관리자 페이지, 스케줄링(배치작업), 로그아웃시 뒤로가기 방지, 사용자 경험 개선
                                 <br>
                                 <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modal_2n3">상세 설명 보기</button>
+                                <p id="mobile1" style="font-size: 12px;"></p>
                                 <a href="https://www.canva.com/design/DAFpsj82YXU/Hc7XI8i9ZYnJeciYjWgoEw/edit?utm_content=DAFpsj82YXU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='_blank'>3차 PPT</a>
                                 <div class="modal fade" id="modal_2n3" tabindex="-1">
                                     <div class="modal-dialog modal-xl">
@@ -387,6 +388,7 @@
                                             <div class="modal-header">
                                                 <h5 class="modal-title">항공 예약 서비스 2차</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <p id="mobile2" style="font-size: 12px;"></p>
                                             </div>
                                             <div class="modal-body">
                                                 <div id="carouselExampleCaptions2" class="carousel slide carousel-dark">
@@ -653,4 +655,13 @@
         <script src="./resources/js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </body>
+    <script>
+        const msg1 = document.getElementById('mobile1');
+        const msg2 = document.getElementById('mobile2');
+        let filter = "win16|win32|win64|mac|macintel";
+        if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+            msg1.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.';
+            msg2.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.';
+        }
+    </script>
 </html>
