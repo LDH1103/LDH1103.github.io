@@ -201,7 +201,8 @@
                                 3차 담당 : 결제, 가입시 메일인증, 아이디, 비밀번호 찾기, 관리자 페이지, 스케줄링(배치작업), 로그아웃시 뒤로가기 방지, 사용자 경험 개선
                                 <br>
                                 <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal_2n3">상세 설명 보기</button>
-                                <p id="mobile1" style="font-size: 12px;"></p>
+                                <br>
+                                <span id="mobile1" style="font-size: 12px;"></span>
                                 <a href="https://www.canva.com/design/DAFpsj82YXU/Hc7XI8i9ZYnJeciYjWgoEw/edit?utm_content=DAFpsj82YXU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='_blank'>3차 PPT</a>
                                 <div class="modal fade" id="modal_2n3" tabindex="-1">
                                     <div class="modal-dialog modal-xl">
@@ -389,7 +390,8 @@
                                 2차 담당 : DB seed, factory, 미들웨어, 헬퍼함수, 메인 페이지 - 특가항공권, 공지사항 페이지, 예약 조회 페이지, 예약 완료시 메일 발송
                                 <br>
                                 <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal_2">상세 설명 보기</button>
-                                <p id="mobile2" style="font-size: 12px;"></p>
+                                <br>
+                                <span id="mobile2" style="font-size: 12px;"></span>
                                 <a href="https://www.canva.com/design/DAFnEX5iQKM/-WBYP7QO0kpcYiApSAmmCw/edit?utm_content=DAFnEX5iQKM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='_blank'>2차 PPT</a>
                                 <div class="modal fade" id="modal_2" tabindex="-1">
                                     <div class="modal-dialog modal-xl">
@@ -512,9 +514,9 @@
                                 <span class="font_gothic font_sm">퓨어 PHP를 사용한 프로젝트 입니다.</span>
                             </div>
                             <div class="font_gothic">
-                                <a href="https://www.canva.com/design/DAFg_1lhOls/cDhrzhvk5pbVv7GU1tp3ZQ/edit" target="_blank">1차 PPT</a>
-                                <br>
                                 1차 담당 : 작성 페이지, 삭제 페이지, 프로필 이미지 기능
+                                <br>
+                                <a href="https://www.canva.com/design/DAFg_1lhOls/cDhrzhvk5pbVv7GU1tp3ZQ/edit" target="_blank">1차 PPT</a>
                             </div>
                         </div>
                     </div>
@@ -676,8 +678,8 @@
         const msg2 = document.getElementById('mobile2');
         let filter = "win16|win32|win64|mac|macintel";
         if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-            msg1.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.';
-            msg2.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.';
+            msg1.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.<br>';
+            msg2.innerHTML = '모바일 환경에서는 설명글이 보이지 않습니다.<br>';
         }
     </script>
 </html>
