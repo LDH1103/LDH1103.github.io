@@ -138,6 +138,19 @@
   top: 10px;
 }
 
+.font_nanum {
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+
+.modal_img_custom {
+  margin: 0 auto;
+  display: block;
+  width: auto; /* 원본 너비 유지 */
+  height: auto; /* 원본 높이 유지 */
+  max-width: 100%; /* 부모 컨테이너 제한 제거 */
+  max-height: none; /* 부모 컨테이너 제한 제거 */
+}
+
 .font_sm {
   font-size: 16px;
 }
